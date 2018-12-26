@@ -6,7 +6,12 @@
 
 .navbar {
   background: #fff;
-  height: 75px; }
+  height: 75px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 2; }
   .navbar .logo img {
     width: 75px;
     height: 75px;
@@ -53,7 +58,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    position: relative; }
+    position: relative;
+    z-index: 1; }
     #hero .hero-container .hero-content {
       text-align: center;
       position: absolute;
@@ -126,7 +132,8 @@
   #info .try {
     text-align: center;
     width: 100%;
-    padding: 100px 30px; }
+    padding: 100px 30px;
+    font-family: "Roboto", sans-serif; }
     #info .join a,
     #info .find a,
     #info .try a {
@@ -179,7 +186,8 @@
       margin: 0 auto;
       top: 35%;
       line-height: 3rem;
-      padding: 0 100px; }
+      padding: 0 100px;
+      font-family: "Roboto", sans-serif; }
     #gallery .tour h1 {
       font-size: 2.2rem;
       font-weight: 700;
@@ -213,7 +221,8 @@
   #staff .staff-box-3 {
     text-align: center;
     line-height: 1.8;
-    padding: 20px; }
+    padding: 20px;
+    font-family: "Roboto", sans-serif; }
     #staff .staff-box-1 .staff-img img,
     #staff .staff-box-2 .staff-img img,
     #staff .staff-box-3 .staff-img img {
@@ -248,5 +257,46 @@
     background: red; }
     #staff .staff-box-3 .staff-img img {
       border: 3px solid #818181; }
+
+footer {
+  height: 250px;
+  width: 100%; }
+  footer .top-footer {
+    width: 100%;
+    height: 175px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 30px; }
+    footer .top-footer .questions,
+    footer .top-footer .careers {
+      line-height: 1.6; }
+      footer .top-footer .questions h1 a,
+      footer .top-footer .careers h1 a {
+        font-size: 1.2rem;
+        font-weight: 900;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        color: #445361; }
+      footer .top-footer .questions p,
+      footer .top-footer .careers p {
+        font-family: "Roboto", sans-serif;
+        color: #445361; }
+    footer .top-footer .links ul li a {
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      color: #445361;
+      line-height: 1.6; }
+    footer .top-footer .icons {
+      font-size: 35px;
+      color: #445361; }
+      footer .top-footer .icons ul li {
+        display: inline;
+        margin: 0 10px; }
+  footer .bottom-footer {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: #445361;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
